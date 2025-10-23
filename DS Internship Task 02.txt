@@ -1,0 +1,30 @@
+# Simple Student Grade Calculator
+
+# Take input from the user
+marks = float(input("Enter your marks (out of 100): "))
+
+# Determine grade and message
+if marks >= 90:
+    grade = "A+"
+    message = "Excellent work! Keep shining!"
+elif marks >= 80:
+    grade = "A"
+    message = "Great job! You're doing really well!"
+elif marks >= 70:
+    grade = "B"
+    message = "Good effort! Keep improving!"
+elif marks >= 60:
+    grade = "C"
+    message = "You passed! Try to aim higher next time!"
+elif marks >= 50:
+    grade = "D"
+    message = "You made it! A little more effort will go a long way!"
+else:
+    grade = "F"
+    message = "Don't be discouraged. Keep working hard—you can do it next time!"
+
+# Display result
+print("\n--- Result ---")
+print(f"Marks: {marks}")
+print(f"Grade: {grade}")
+print(f"Message: {message}")
